@@ -1,3 +1,4 @@
+// Made by Astrex, make sure to star the repo https://github.com/astrexxx/Discord-OwO-tracker
 const { Client, Collection, Intents } = require('discord.js');
 const fs = require('node:fs');
 const path = require('node:path')
