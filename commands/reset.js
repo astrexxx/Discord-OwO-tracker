@@ -19,6 +19,7 @@ module.exports = {
         )),
   async execute(i) {
     try {
+      if (!i.member.permissions.has('ADMINISTRATOR')) return await i.reply({ content: `You need \`ADMINISTRATOR\` permissions to run this command.`, ephemeral: true });
       const type = i.options.getString('value');
       if (!type) return;
 
