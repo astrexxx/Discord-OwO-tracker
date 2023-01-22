@@ -5,6 +5,7 @@ const path = require('node:path')
 const { connect } = require('mongoose');
 const cron = require('node-cron');
 const config = require('./config.json')
+require("dotenv").config();
 
 // Create a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.DIRECT_MESSAGES] });
